@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css"	>
+body {
+		background-color: #C7E4D9;
+		color: black;
+		font-family: 'Alegreya Sans SC', sans-serif;
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+<body>
+	<h1>Edit Player Page</h1>
+	<form method="POST" action="/tennisStars/<%=tennisStarsList.id%>?_method=PUT">
+		Name: <input type="text" name="name" value="<%=tennisStarsList.name%>"/><br/>
+		Home: <input type="text" name="home" value="<%=tennisStarsList.home%>"/><br/>
+		<input type="submit" value="Submit Changes"/>
+	</form>
+</body>
+</html>
